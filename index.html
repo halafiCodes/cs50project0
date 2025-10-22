@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        input[type="text"] {
+            width: 700px;
+            height: 30px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            font-size: 16px;
+            outline: none;
+        }
+
+        #contain {
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 12px 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #0f64db;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            width: 150px;
+        }
+
+        .letter {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .adv {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .img {
+            position: absolute;
+            top: 20px;
+            right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <div class="letter" style="color:blue;">G</div>
+        <div class="letter" style="color:red;">o</div>
+        <div class="letter" style="color:yellow;">o</div>
+        <div class="letter" style="color:blue;">g</div>
+        <div class="letter" style="color:green;">l</div>
+        <div class="letter" style="color:red;">e</div>
+    </div>
+
+    <form action="https://www.google.com/search" method="get">
+        <input id="google" name="q" type="text" placeholder="Search Google or type a URL">
+        <div class="buttons">
+            <button type="submit">Google Search</button>
+            <button type="submit" name="btnI">I'm Feeling Lucky</button>
+        </div>
+    </form>
+
+    <a href="advanced_search.html" class="adv">Advanced Search</a>
+    <a href="imageSearch.html" class="img">Image Search</a>
+</body>
+
+</html>
